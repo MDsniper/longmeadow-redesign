@@ -1,4 +1,5 @@
 FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+COPY *.html /usr/share/nginx/html/
+COPY styles.css /usr/share/nginx/html/
 COPY img/ /usr/share/nginx/html/img/
 EXPOSE 80
